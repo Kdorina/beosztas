@@ -26,11 +26,11 @@ import javax.swing.JScrollPane;
 public class MainFrame extends JFrame {
 
     JPanel mainPanel;
-    public DefaultComboBoxModel<String> beosztModel;
-    public JComboBox<String> beosztCombo;
+    public DefaultComboBoxModel<String> groupModel;
+    public JComboBox<String> groupCombo;
 
-    public DefaultListModel<String> beosztasModel;
-    public JList<String> beosztLista;
+    public DefaultListModel<String> munkaModel;
+    public JList<String> munkaLista;
     JScrollPane scrollPane;
 
     public MainFrame() {
@@ -40,12 +40,12 @@ public class MainFrame extends JFrame {
     }
     private void setMainComponent() {
 
-        this.beosztModel = new DefaultComboBoxModel<>();
-        this.beosztCombo = new JComboBox<>(this.beosztModel);
+        this.groupModel = new DefaultComboBoxModel<>();
+        this.groupCombo = new JComboBox<>(this.groupModel);
 
-        this.beosztasModel = new  DefaultListModel<>();
-        this.beosztLista = new JList<>(this.beosztasModel);
-        this.scrollPane = new JScrollPane(this.beosztLista);
+        this.munkaModel = new  DefaultListModel<>();
+        this.munkaLista = new JList<>(this.munkaModel);
+        this.scrollPane = new JScrollPane(this.munkaLista);
         
         
     }
@@ -53,7 +53,7 @@ public class MainFrame extends JFrame {
      
         this.mainPanel = new JPanel();
         this.mainPanel.setLayout(new BorderLayout());
-        this.mainPanel.add(this.beosztCombo, BorderLayout.NORTH);
+        this.mainPanel.add(this.groupCombo, BorderLayout.NORTH);
         this.mainPanel.add(this.scrollPane, BorderLayout.CENTER);
         
 

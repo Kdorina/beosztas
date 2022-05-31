@@ -28,7 +28,7 @@ public class MainModel {
         new Beosztas(9,"Mosogató"),
         new Beosztas(10,"Asztalos")
     };
- public Vector<Beosztas>bList = new Vector<>(Arrays.asList(BeosztasArray));
+ public Vector<Beosztas>groupList = new Vector<>(Arrays.asList(BeosztasArray));
 
         public Munka[] munkaArray = {
 
@@ -44,6 +44,6 @@ public class MainModel {
             new Munka(9, "Erős Pista", 3)
     
         };
-        public Vector<Munka> beosztLista = new Vector<>(Arrays.asList(munkaArray));
+        public Vector<Munka> munkaLista = new Vector<>(Arrays.asList(munkaArray));
     }
     
